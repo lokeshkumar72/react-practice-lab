@@ -1,10 +1,11 @@
-import Welcome from "./components/Welcome";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div>
-      <h1>Day 9: React Components</h1>
-      <Welcome name="Lokesh" role="MERN Developer" />
+      <Header />
+      <h1>Hello React ⚛️</h1>
+      <p>Learning JSX and components</p>
     </div>
   );
 }
