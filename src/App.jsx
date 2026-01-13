@@ -1,20 +1,9 @@
-import { useState } from "react";
+import Users from "./components/Users.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>React Counter</h1>
-      <h2>{count}</h2>
-
-      <button onClick={() => setCount(count + 1)}>+</button>
-      <button
-        onClick={() => setCount(count - 1)}
-        style={{ marginLeft: "10px" }}
-      >
-        -
-      </button>
+    <div>
+      <Users />
     </div>
   );
 }
