@@ -1,9 +1,10 @@
-import Users from "./components/Users.jsx";
+import UserList from "./components/UserList";
 
 function App() {
   return (
     <div>
-      <Users />
+      <h1>React Conditional Rendering Demo</h1>
+      <UserList />
     </div>
   );
 }
