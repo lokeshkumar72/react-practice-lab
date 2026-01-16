@@ -1,16 +1,10 @@
-import UserList from "./components/UserList";
+import Parent from "./components/Parent";
 
 function App() {
-  const users = [
-    { id: 1, name: "Lokesh", role: "MERN Developer" },
-    { id: 2, name: "Aman", role: "Frontend Developer" },
-    { id: 3, name: "Riya", role: "React Developer" },
-  ];
-
   return (
     <div>
-      <h2>User List</h2>
-      <UserList users={users} />
+      <h1>Props vs State Demo</h1>
+      <Parent />
     </div>
   );
 }
