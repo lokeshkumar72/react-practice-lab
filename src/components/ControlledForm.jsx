@@ -13,22 +13,39 @@ function ControlledForm() {
     });
   }
 
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    if (!formData.name || !formData.email) {
+      alert("All fields required");
+      return;
+    }
+
+    console.log(formData);
+  }
+
   return (
-    <form>
+    <div>
       <h3>Controlled Form</h3>
-      <input
-        name="name"
-        placeholder="Name"
-        value={formData.name}
-        onChange={handleChange}
-      />
-      <input
-        name="email"
-        placeholder="Email"
-        value={formData.email}
-        onChange={handleChange}
-      />
-    </form>
+
+      <form onSubmit={handleSubmit}>
+        <input
+          name="name"
+          placeholder="Name"
+          value={formData.name}
+          onChange={handleChange}
+        />
+
+        <input
+          name="email"
+          placeholder="Email"
+          value={formData.email}
+          onChange={handleChange}
+        />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   );
 }
 
