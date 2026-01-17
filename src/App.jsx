@@ -1,12 +1,7 @@
-import Parent from "./components/Parent";
+import ControlledInput from "./components/ControlledInput";
 
 function App() {
-  return (
-    <div>
-      <h1>Props vs State Demo</h1>
-      <Parent />
-    </div>
-  );
+  return <ControlledInput />;
 }
 
 export default App;
