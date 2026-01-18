@@ -1,20 +1,20 @@
-## Day 15 — Controlled Components & Forms (React)
+# Day 16 – useRef & Uncontrolled Inputs in React ⚛️
 
-### Concepts Covered
+This day focuses on understanding the `useRef` hook and how it is used for:
 
-- Controlled inputs using `useState`
-- Handling multiple inputs with a single state object
-- Form submission with `onSubmit`
-- Basic form validation
+- Storing mutable values
+- Accessing DOM elements
+- Handling uncontrolled form inputs
 
-### Why Controlled Components?
+These concepts help improve performance by avoiding unnecessary re-renders.
 
-- Single source of truth
-- Easier validation & debugging
-- Most common interview pattern
+---
 
-### What I Learned
+## 🔹 Topics Covered
 
-- Never put complex logic directly inside JSX
-- Forms in React are predictable when state-driven
-- [Controlled Form](public/controlled-form.png)
+### 1️⃣ useRef – Basic Example
+
+- Stores a mutable value (`count`)
+- Updating `.current` does NOT trigger re-render
+
+📁 File:
