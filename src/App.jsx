@@ -1,12 +1,14 @@
-import ControlledInput from "./components/ControlledInput";
-import ControlledForm from "./components/ControlledForm";
+import UseRefBasic from "./components/UseRefBasic";
+import UseRefFocus from "./components/UseRefFocus";
+import UncontrolledInput from "./components/UncontrolledInput";
 
 function App() {
   return (
-    <>
-      <ControlledInput />
-      <ControlledForm />
-    </>
+    <div>
+      <UseRefBasic />
+      <UseRefFocus />
+      <UncontrolledInput />
+    </div>
   );
 }
 
