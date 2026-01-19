@@ -1,13 +1,23 @@
-import UseRefBasic from "./components/UseRefBasic";
-import UseRefFocus from "./components/UseRefFocus";
-import UncontrolledInput from "./components/UncontrolledInput";
+import WithoutUseMemo from "./hooks/useMemo-useCallback/WithoutUseMemo";
+import WithUseMemo from "./hooks/useMemo-useCallback/WithUseMemo";
+import WithoutUseCallback from "./hooks/useMemo-useCallback/WithoutUseCallback";
+import WithUseCallback from "./hooks/useMemo-useCallback/WithUseCallback";
 
 function App() {
   return (
-    <div>
-      <UseRefBasic />
-      <UseRefFocus />
-      <UncontrolledInput />
+    <div style={{ padding: "20px" }}>
+      <h2>Day 17 – useMemo & useCallback</h2>
+
+      <WithoutUseMemo />
+      <hr />
+
+      <WithUseMemo />
+      <hr />
+
+      <WithoutUseCallback />
+      <hr />
+
+      <WithUseCallback />
     </div>
   );
 }

@@ -11,3 +11,6 @@ These hooks help optimize React apps by memoizing values and functions.
 - Expensive calculations
 - Referential equality
 - React re-render optimization
+
+### Browser Observation
+- Verified optimization using DevTools console logs.
