@@ -6,10 +6,9 @@ export default function Parent() {
 
   return (
     <>
-      <button onClick={() => setCount(count + 1)}>
-        Count: {count}
-      </button>
-      <Child />
+      <button onClick={() => setCount(count + 1)}>Count: {count}</button>
+
+      <Child value={count} />
     </>
   );
 }
