@@ -1,26 +1,26 @@
-import { useEffect, useState } from "react";
+import useFetch from "../hooks/day-19-custom-hooks/useFetch";
 
 function Users() {
-  const [users, setUsers] = useState([]);
+  // using custom hook
+  const { data, loading } = useFetch(
+    "https://jsonplaceholder.typicode.com/users"
+  );
 
-  useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then((res) => res.json())
-      .then((data) => {
-        setUsers(data);
-      })
-      .catch((err) => console.error(err));
-  }, []);
+  if (loading) {
+    return <p>Loading users...</p>;
+  }
 
   return (
-    <div>
-      <h1>User List</h1>
+    <div style={{ padding: "20px" }}>
+      <h2>Users List (useFetch Hook)</h2>
 
-      {users.length === 0 ? (
-        <p>No users found</p>
-      ) : (
-        users.map((user) => <p key={user.id}>{user.name}</p>)
-      )}
+      <ul>
+        {data.map(user => (
+          <li key={user.id}>
+            {user.name} — {user.email}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

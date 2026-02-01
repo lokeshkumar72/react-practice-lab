@@ -1,12 +1,11 @@
-import Parent from "./day18-react-memo/Parent";
-import ExpensiveComponent from "./day18-react-memo/ExpensiveComponent";
+import Counter from "./components/Counter";
 
-export default function App() {
+function App() {
   return (
-    <>
-      <h2>Day 18 — React.memo Demo</h2>
-      <Parent />
-      <ExpensiveComponent />
-    </>
+    <div>
+      <Counter />
+    </div>
   );
 }
+
+export default App;
