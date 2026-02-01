@@ -1,25 +1,12 @@
-import WithoutUseMemo from "./hooks/useMemo-useCallback/WithoutUseMemo";
-import WithUseMemo from "./hooks/useMemo-useCallback/WithUseMemo";
-import WithoutUseCallback from "./hooks/useMemo-useCallback/WithoutUseCallback";
-import WithUseCallback from "./hooks/useMemo-useCallback/WithUseCallback";
+import Parent from "./day18-react-memo/Parent";
+import ExpensiveComponent from "./day18-react-memo/ExpensiveComponent";
 
-function App() {
+export default function App() {
   return (
-    <div style={{ padding: "20px" }}>
-      <h2>Day 17 – useMemo & useCallback</h2>
-
-      <WithoutUseMemo />
-      <hr />
-
-      <WithUseMemo />
-      <hr />
-
-      <WithoutUseCallback />
-      <hr />
-
-      <WithUseCallback />
-    </div>
+    <>
+      <h2>Day 18 — React.memo Demo</h2>
+      <Parent />
+      <ExpensiveComponent />
+    </>
   );
 }
-
-export default App;
